@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recipe_description"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:background="@drawable/cuisine_backgroud"
+    tools:context=".presentation.RecipeDescriptionActivity">
+
+    <TextView
+        android:id="@+id/description_tag"
+        android:layout_width="199dp"
+        android:layout_height="74dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="cursive"
+        android:foregroundGravity="center"
+        android:gravity="center_horizontal"
+        android:text="Recipe Description"
+        android:textColor="@color/black" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollable_tag"
+        android:layout_below="@id/description_tag">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Title_text"
+                android:fontFamily="@font/cairo_semibold"
+                android:text="@string/Title_Recipe"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/description_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Title_text"
+                android:fontFamily="@font/gafata"
+                android:textColor="@color/black"
+                android:textSize="23sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/description_title"
+                android:id="@+id/Title_cuisine"
+                android:fontFamily="@font/cairo_semibold"
+                android:text="@string/Title_Cuisine"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/description_cuisine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Title_cuisine"
+                android:fontFamily="@font/gafata"
+                android:textColor="@color/black"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/just_TEXT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/description_cuisine"
+                android:text="@string/Ingredient"
+                android:fontFamily="@font/cairo_semibold"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/description_ingredientList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/just_TEXT"
+                android:fontFamily="@font/gafata"
+                android:textColor="@color/black"
+                android:textSize="23sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/description_ingredientList"
+                android:id="@+id/Title_discription"
+                android:fontFamily="@font/cairo_semibold"
+                android:text="@string/Description"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/description"
+                android:fontFamily="@font/gafata"
+                android:textColor="@color/black"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/Title_discription"/>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

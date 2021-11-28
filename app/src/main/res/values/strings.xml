@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Got Apples</string>
+    <string name="bottom_line">I will do it later</string>
+    <string name="Ingredient"><u>INGREDIENT</u></string>
+    <string name="Title_Recipe"><u>RECIPE TITLE</u></string>
+    <string name="Title_Cuisine"><u>TYPE OF CUISINE</u></string>
+    <string name="Description"><u>DESCRIPTION</u></string>
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/cuisine_backgroud">
+    tools:context=".IngredientsActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-85dp"
+        tools:layout_editor_absoluteY="-379dp">
+
+        <AutoCompleteTextView
+            android:id="@+id/ingredients_Input"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
+            android:completionThreshold="1"
+            android:hint="Input your ingredients here"
+            android:textColorHint="@color/black"
+            app:autoSizeTextType="uniform" />
+
+        <Button
+            android:id="@+id/ingredients_Enter_Button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="20dp"
+            android:autoSizeTextType="uniform"
+            android:backgroundTint="@color/black"
+            android:text="Enter your ingredient" />
+
+        <ListView
+            android:id="@+id/ingredients_List"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoSizeTextType="uniform"
+        android:backgroundTint="@color/black"
+        app:layout_constraintHorizontal_bias="1.0"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
